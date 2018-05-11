@@ -8,24 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		B81C19A120A6277A0056C8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A020A6277A0056C8E5 /* AppDelegate.swift */; };
-		B81C19A320A6277A0056C8E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A220A6277A0056C8E5 /* ViewController.swift */; };
+		B81C19A320A6277A0056C8E5 /* MoviesGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A220A6277A0056C8E5 /* MoviesGridViewController.swift */; };
 		B81C19A920A6277A0056C8E5 /* MovieGrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A720A6277A0056C8E5 /* MovieGrid.xcdatamodeld */; };
 		B81C19AB20A6277B0056C8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81C19AA20A6277B0056C8E5 /* Assets.xcassets */; };
 		B81C19BC20A62CE20056C8E5 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19B920A62CE20056C8E5 /* RxSwift.framework */; };
 		B81C19BD20A62CE20056C8E5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19BA20A62CE20056C8E5 /* Alamofire.framework */; };
 		B81C19BE20A62CE20056C8E5 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19BB20A62CE20056C8E5 /* RxCocoa.framework */; };
+		B81C19C120A62DCA0056C8E5 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19C020A62DCA0056C8E5 /* MoviesManager.swift */; };
+		B81C19C520A6327F0056C8E5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19C320A6327F0056C8E5 /* SwiftyJSON.framework */; };
+		B81C19C620A6327F0056C8E5 /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19C420A6327F0056C8E5 /* Sync.framework */; };
+		B81C19C820A633E60056C8E5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19C720A633E60056C8E5 /* DataManager.swift */; };
+		B81C19CB20A636610056C8E5 /* MoviesGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19CA20A636610056C8E5 /* MoviesGridViewModel.swift */; };
+		B81C19CD20A6369A0056C8E5 /* MoviesGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81C19CC20A6369A0056C8E5 /* MoviesGrid.xib */; };
+		B81C19D020A639C20056C8E5 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19CE20A639C20056C8E5 /* Movie+CoreDataClass.swift */; };
+		B81C19D120A639C20056C8E5 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19CF20A639C20056C8E5 /* Movie+CoreDataProperties.swift */; };
+		B81C19D420A63A640056C8E5 /* ManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19D320A63A640056C8E5 /* ManagerProvider.swift */; };
+		B81C19D620A63D140056C8E5 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81C19D520A63D140056C8E5 /* CocoaLumberjackSwift.framework */; };
+		B81C19D820A640020056C8E5 /* MovieThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19D720A640020056C8E5 /* MovieThumbnail.swift */; };
+		B830636220A645C50022E120 /* MovieThumbnail.xib in Resources */ = {isa = PBXBuildFile; fileRef = B830636120A645C50022E120 /* MovieThumbnail.xib */; };
+		B830636420A646B50022E120 /* MovieThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B830636320A646B50022E120 /* MovieThumbnailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B81C199D20A6277A0056C8E5 /* MovieGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81C19A020A6277A0056C8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B81C19A220A6277A0056C8E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B81C19A220A6277A0056C8E5 /* MoviesGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridViewController.swift; sourceTree = "<group>"; };
 		B81C19A820A6277A0056C8E5 /* MovieGrid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieGrid.xcdatamodel; sourceTree = "<group>"; };
 		B81C19AA20A6277B0056C8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81C19AF20A6277B0056C8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81C19B920A62CE20056C8E5 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		B81C19BA20A62CE20056C8E5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B81C19BB20A62CE20056C8E5 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B81C19C020A62DCA0056C8E5 /* MoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
+		B81C19C320A6327F0056C8E5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		B81C19C420A6327F0056C8E5 /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Carthage/Build/iOS/Sync.framework; sourceTree = "<group>"; };
+		B81C19C720A633E60056C8E5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B81C19CA20A636610056C8E5 /* MoviesGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridViewModel.swift; sourceTree = "<group>"; };
+		B81C19CC20A6369A0056C8E5 /* MoviesGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesGrid.xib; sourceTree = "<group>"; };
+		B81C19CE20A639C20056C8E5 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B81C19CF20A639C20056C8E5 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B81C19D320A63A640056C8E5 /* ManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProvider.swift; sourceTree = "<group>"; };
+		B81C19D520A63D140056C8E5 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		B81C19D720A640020056C8E5 /* MovieThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnail.swift; sourceTree = "<group>"; };
+		B830636120A645C50022E120 /* MovieThumbnail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieThumbnail.xib; sourceTree = "<group>"; };
+		B830636320A646B50022E120 /* MovieThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81C19D620A63D140056C8E5 /* CocoaLumberjackSwift.framework in Frameworks */,
+				B81C19C520A6327F0056C8E5 /* SwiftyJSON.framework in Frameworks */,
+				B81C19C620A6327F0056C8E5 /* Sync.framework in Frameworks */,
 				B81C19BC20A62CE20056C8E5 /* RxSwift.framework in Frameworks */,
 				B81C19BD20A62CE20056C8E5 /* Alamofire.framework in Frameworks */,
 				B81C19BE20A62CE20056C8E5 /* RxCocoa.framework in Frameworks */,
@@ -62,8 +91,10 @@
 		B81C199F20A6277A0056C8E5 /* MovieGrid */ = {
 			isa = PBXGroup;
 			children = (
+				B81C19D220A639CE0056C8E5 /* Model */,
+				B81C19C220A62DD60056C8E5 /* Managers */,
+				B81C19C920A636270056C8E5 /* Grid */,
 				B81C19A020A6277A0056C8E5 /* AppDelegate.swift */,
-				B81C19A220A6277A0056C8E5 /* ViewController.swift */,
 				B81C19AA20A6277B0056C8E5 /* Assets.xcassets */,
 				B81C19AF20A6277B0056C8E5 /* Info.plist */,
 				B81C19A720A6277A0056C8E5 /* MovieGrid.xcdatamodeld */,
@@ -74,11 +105,46 @@
 		B81C19B820A62CE20056C8E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B81C19D520A63D140056C8E5 /* CocoaLumberjackSwift.framework */,
+				B81C19C320A6327F0056C8E5 /* SwiftyJSON.framework */,
+				B81C19C420A6327F0056C8E5 /* Sync.framework */,
 				B81C19BA20A62CE20056C8E5 /* Alamofire.framework */,
 				B81C19BB20A62CE20056C8E5 /* RxCocoa.framework */,
 				B81C19B920A62CE20056C8E5 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81C19C220A62DD60056C8E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B81C19D320A63A640056C8E5 /* ManagerProvider.swift */,
+				B81C19C020A62DCA0056C8E5 /* MoviesManager.swift */,
+				B81C19C720A633E60056C8E5 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B81C19C920A636270056C8E5 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				B81C19CC20A6369A0056C8E5 /* MoviesGrid.xib */,
+				B81C19CA20A636610056C8E5 /* MoviesGridViewModel.swift */,
+				B81C19A220A6277A0056C8E5 /* MoviesGridViewController.swift */,
+				B830636120A645C50022E120 /* MovieThumbnail.xib */,
+				B81C19D720A640020056C8E5 /* MovieThumbnail.swift */,
+				B830636320A646B50022E120 /* MovieThumbnailCell.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		B81C19D220A639CE0056C8E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B81C19CE20A639C20056C8E5 /* Movie+CoreDataClass.swift */,
+				B81C19CF20A639C20056C8E5 /* Movie+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +206,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81C19CD20A6369A0056C8E5 /* MoviesGrid.xib in Resources */,
 				B81C19AB20A6277B0056C8E5 /* Assets.xcassets in Resources */,
+				B830636220A645C50022E120 /* MovieThumbnail.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +224,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sync.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -171,9 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81C19A320A6277A0056C8E5 /* ViewController.swift in Sources */,
+				B81C19D020A639C20056C8E5 /* Movie+CoreDataClass.swift in Sources */,
+				B81C19C120A62DCA0056C8E5 /* MoviesManager.swift in Sources */,
+				B81C19CB20A636610056C8E5 /* MoviesGridViewModel.swift in Sources */,
+				B81C19D820A640020056C8E5 /* MovieThumbnail.swift in Sources */,
+				B81C19C820A633E60056C8E5 /* DataManager.swift in Sources */,
+				B81C19D120A639C20056C8E5 /* Movie+CoreDataProperties.swift in Sources */,
+				B81C19A320A6277A0056C8E5 /* MoviesGridViewController.swift in Sources */,
 				B81C19A920A6277A0056C8E5 /* MovieGrid.xcdatamodeld in Sources */,
 				B81C19A120A6277A0056C8E5 /* AppDelegate.swift in Sources */,
+				B81C19D420A63A640056C8E5 /* ManagerProvider.swift in Sources */,
+				B830636420A646B50022E120 /* MovieThumbnailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

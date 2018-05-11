@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Movie" representedClassName="Movie" syncable="YES">
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="hyper.isPrimaryKey" value="true"/>
+                <entry key="hyper.remoteKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="overview" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="hyper.remoteKey" value="overview"/>
+            </userInfo>
+        </attribute>
+        <attribute name="posterPath" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="hyper.remoteKey" value="poster_path"/>
+            </userInfo>
+        </attribute>
+        <attribute name="releaseDate" attributeType="Date" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="hyper.remoteKey" value="release_date"/>
+            </userInfo>
+        </attribute>
+        <attribute name="score" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="hyper.remoteKey" value="vote_average"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="hyper.remoteKey" value="original_title"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="Movie" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
 </model>
