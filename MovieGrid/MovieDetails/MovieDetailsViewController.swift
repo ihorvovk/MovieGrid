@@ -48,5 +48,5 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var overviewLabel: UILabel!
     
-    var viewModel = MovieDetailsViewModel()
+    let viewModel = MovieDetailsViewModel()
 }

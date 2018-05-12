@@ -49,7 +49,7 @@ class MoviesGridViewController: UIViewController {
     
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
     
-    fileprivate var viewModel = MoviesGridViewModel()
+    fileprivate let viewModel = MoviesGridViewModel()
     private let disposeBag = DisposeBag()
     
     func openMovieDetails(movieID: Int) {
