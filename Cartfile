@@ -1,5 +1,6 @@
 github "ReactiveX/RxSwift"
 github "Alamofire/Alamofire"
+github "Alamofire/AlamofireImage"
 github "SwiftyJSON/SwiftyJSON"
 github "SyncDB/Sync"
 github "CocoaLumberjack/CocoaLumberjack"

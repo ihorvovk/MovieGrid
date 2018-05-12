@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MovieThumbnailCell: UICollectionViewCell {
     
+    override func prepareForReuse() {
+        activityIndicator.stopAnimating()
+        posterImageView.af_cancelImageRequest()
+    }
+    
     func fill(thumbnail: MovieThumbnail) {
+        activityIndicator.startAnimating()
+        posterImageView.af_setImage(withURL: thumbnail.posterURL) { [weak self] _ in
+            self?.activityIndicator.stopAnimating()
+        }
     }
     
     // MARK: - Implementation
     
     @IBOutlet private weak var posterImageView: UIImageView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
 }

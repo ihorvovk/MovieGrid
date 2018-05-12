@@ -7,6 +7,7 @@
                 <entry key="hyper.remoteKey" value="id"/>
             </userInfo>
         </attribute>
+        <attribute name="index" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="overview" attributeType="String" syncable="YES">
             <userInfo>
                 <entry key="hyper.remoteKey" value="overview"/>
@@ -34,6 +35,6 @@
         </attribute>
     </entity>
     <elements>
-        <element name="Movie" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Movie" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>

@@ -13,24 +13,41 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mDC-SR-oym" customClass="MovieThumbnailCell" customModule="MovieGrid" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="136" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="162" height="226"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="136" height="200"/>
+                <rect key="frame" x="0.0" y="0.0" width="162" height="226"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0r-dC-TPa">
-                        <rect key="frame" x="0.0" y="0.0" width="136" height="200"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z0r-dC-TPa">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="226"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="YIL-cE-EAj">
+                        <rect key="frame" x="71" y="103" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="z0r-dC-TPa" firstAttribute="top" secondItem="mDC-SR-oym" secondAttribute="top" id="66M-ML-2fj"/>
+                <constraint firstAttribute="bottom" secondItem="z0r-dC-TPa" secondAttribute="bottom" id="MKw-SZ-s5y"/>
+                <constraint firstItem="z0r-dC-TPa" firstAttribute="leading" secondItem="mDC-SR-oym" secondAttribute="leading" id="hMs-1R-n94"/>
+                <constraint firstAttribute="trailing" secondItem="z0r-dC-TPa" secondAttribute="trailing" id="j1a-IN-Imj"/>
+                <constraint firstItem="YIL-cE-EAj" firstAttribute="centerX" secondItem="z0r-dC-TPa" secondAttribute="centerX" id="kOK-KX-59b"/>
+                <constraint firstItem="YIL-cE-EAj" firstAttribute="centerY" secondItem="z0r-dC-TPa" secondAttribute="centerY" id="tD8-S9-YCG"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vz0-SU-Qnv"/>
             <size key="customSize" width="136" height="200"/>
             <connections>
+                <outlet property="activityIndicator" destination="YIL-cE-EAj" id="cMo-hc-5pW"/>
                 <outlet property="posterImageView" destination="z0r-dC-TPa" id="Vyc-cL-lRi"/>
             </connections>
-            <point key="canvasLocation" x="-263" y="-117"/>
+            <point key="canvasLocation" x="-311" y="53"/>
         </collectionViewCell>
     </objects>
 </document>

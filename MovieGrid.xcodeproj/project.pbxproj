@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B81AEDD120A6C019003F56F1 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81AEDD020A6C019003F56F1 /* CocoaLumberjack.framework */; };
+		B81AEDD320A6C9FA003F56F1 /* MovieDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81AEDD220A6C9FA003F56F1 /* MovieDetails.xib */; };
+		B81AEDD620A6CA28003F56F1 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AEDD520A6CA28003F56F1 /* MovieDetailsViewModel.swift */; };
+		B81AEDD820A6CA37003F56F1 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AEDD720A6CA37003F56F1 /* MovieDetailsViewController.swift */; };
+		B81AEDDA20A6CA52003F56F1 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81AEDD920A6CA52003F56F1 /* AlamofireImage.framework */; };
+		B81AEDDD20A6CE8F003F56F1 /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AEDDC20A6CE8E003F56F1 /* UIView+Layer.swift */; };
 		B81C19A120A6277A0056C8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A020A6277A0056C8E5 /* AppDelegate.swift */; };
 		B81C19A320A6277A0056C8E5 /* MoviesGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A220A6277A0056C8E5 /* MoviesGridViewController.swift */; };
 		B81C19A920A6277A0056C8E5 /* MovieGrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81C19A720A6277A0056C8E5 /* MovieGrid.xcdatamodeld */; };
@@ -30,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B81AEDD020A6C019003F56F1 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		B81AEDD220A6C9FA003F56F1 /* MovieDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetails.xib; sourceTree = "<group>"; };
+		B81AEDD520A6CA28003F56F1 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		B81AEDD720A6CA37003F56F1 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		B81AEDD920A6CA52003F56F1 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		B81AEDDC20A6CE8E003F56F1 /* UIView+Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
 		B81C199D20A6277A0056C8E5 /* MovieGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81C19A020A6277A0056C8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81C19A220A6277A0056C8E5 /* MoviesGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81AEDDA20A6CA52003F56F1 /* AlamofireImage.framework in Frameworks */,
+				B81AEDD120A6C019003F56F1 /* CocoaLumberjack.framework in Frameworks */,
 				B81C19D620A63D140056C8E5 /* CocoaLumberjackSwift.framework in Frameworks */,
 				B81C19C520A6327F0056C8E5 /* SwiftyJSON.framework in Frameworks */,
 				B81C19C620A6327F0056C8E5 /* Sync.framework in Frameworks */,
@@ -71,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81AEDD420A6C9FE003F56F1 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B81AEDD220A6C9FA003F56F1 /* MovieDetails.xib */,
+				B81AEDD520A6CA28003F56F1 /* MovieDetailsViewModel.swift */,
+				B81AEDD720A6CA37003F56F1 /* MovieDetailsViewController.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		B81AEDDB20A6CE70003F56F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B81AEDDC20A6CE8E003F56F1 /* UIView+Layer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B81C199420A6277A0056C8E5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,9 +123,11 @@
 		B81C199F20A6277A0056C8E5 /* MovieGrid */ = {
 			isa = PBXGroup;
 			children = (
+				B81AEDDB20A6CE70003F56F1 /* Common */,
 				B81C19D220A639CE0056C8E5 /* Model */,
 				B81C19C220A62DD60056C8E5 /* Managers */,
 				B81C19C920A636270056C8E5 /* Grid */,
+				B81AEDD420A6C9FE003F56F1 /* MovieDetails */,
 				B81C19A020A6277A0056C8E5 /* AppDelegate.swift */,
 				B81C19AA20A6277B0056C8E5 /* Assets.xcassets */,
 				B81C19AF20A6277B0056C8E5 /* Info.plist */,
@@ -105,6 +139,8 @@
 		B81C19B820A62CE20056C8E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B81AEDD920A6CA52003F56F1 /* AlamofireImage.framework */,
+				B81AEDD020A6C019003F56F1 /* CocoaLumberjack.framework */,
 				B81C19D520A63D140056C8E5 /* CocoaLumberjackSwift.framework */,
 				B81C19C320A6327F0056C8E5 /* SwiftyJSON.framework */,
 				B81C19C420A6327F0056C8E5 /* Sync.framework */,
@@ -209,6 +245,7 @@
 				B81C19CD20A6369A0056C8E5 /* MoviesGrid.xib in Resources */,
 				B81C19AB20A6277B0056C8E5 /* Assets.xcassets in Resources */,
 				B830636220A645C50022E120 /* MovieThumbnail.xib in Resources */,
+				B81AEDD320A6C9FA003F56F1 /* MovieDetails.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +264,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Sync.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -244,12 +283,15 @@
 			files = (
 				B81C19D020A639C20056C8E5 /* Movie+CoreDataClass.swift in Sources */,
 				B81C19C120A62DCA0056C8E5 /* MoviesManager.swift in Sources */,
+				B81AEDD820A6CA37003F56F1 /* MovieDetailsViewController.swift in Sources */,
 				B81C19CB20A636610056C8E5 /* MoviesGridViewModel.swift in Sources */,
 				B81C19D820A640020056C8E5 /* MovieThumbnail.swift in Sources */,
 				B81C19C820A633E60056C8E5 /* DataManager.swift in Sources */,
+				B81AEDDD20A6CE8F003F56F1 /* UIView+Layer.swift in Sources */,
 				B81C19D120A639C20056C8E5 /* Movie+CoreDataProperties.swift in Sources */,
 				B81C19A320A6277A0056C8E5 /* MoviesGridViewController.swift in Sources */,
 				B81C19A920A6277A0056C8E5 /* MovieGrid.xcdatamodeld in Sources */,
+				B81AEDD620A6CA28003F56F1 /* MovieDetailsViewModel.swift in Sources */,
 				B81C19A120A6277A0056C8E5 /* AppDelegate.swift in Sources */,
 				B81C19D420A63A640056C8E5 /* ManagerProvider.swift in Sources */,
 				B830636420A646B50022E120 /* MovieThumbnailCell.swift in Sources */,
