@@ -31,14 +31,18 @@ class MoviesGridViewModel: NSObject {
         try? fetchResultsController.performFetch()
         updateMovies()
         
+        refresh()
+    }
+    
+    func refresh() {
         loading.value = true
         
         moviesManager.loadMovies(page: 1, deleteOld: true, success: { [weak self] isLast in
             self?.lastLoadedPage = 1
             self?.allPagesLoaded = isLast
             self?.loading.value = false
-        }, failure: { [weak self] in
-            self?.loading.value = false
+            }, failure: { [weak self] in
+                self?.loading.value = false
         })
     }
     

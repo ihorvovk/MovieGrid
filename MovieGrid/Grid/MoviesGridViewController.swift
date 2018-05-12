@@ -21,6 +21,8 @@ class MoviesGridViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("back", comment: ""), style: .plain, target: nil, action: nil)
         
         collectionView.register(UINib(nibName: "MovieThumbnail", bundle: nil), forCellWithReuseIdentifier: "movieThumbnail")
+        collectionView.refreshControl = UIRefreshControl()
+        collectionView.refreshControl?.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         
         viewModel.movieThumbnails.asObservable().subscribe(onNext: { [weak self] _ in
             self?.collectionView.reloadData()
@@ -56,6 +58,11 @@ class MoviesGridViewController: UIViewController {
         let movieDetailsViewController = MovieDetailsViewController(nibName: "MovieDetails", bundle: nil)
         movieDetailsViewController.setup(movieID: movieID)
         navigationController?.pushViewController(movieDetailsViewController, animated: true)
+    }
+    
+    @objc private func refresh(_ sender: Any) {
+        viewModel.refresh()
+        collectionView.refreshControl?.endRefreshing()
     }
 }
 
