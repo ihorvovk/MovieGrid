@@ -96,6 +96,8 @@ class MoviesGridViewModel: NSObject {
 
 extension MoviesGridViewModel: NSFetchedResultsControllerDelegate {
     
+    // TODO: Implement all the delegate methods with more fine-grained refresh of the grid
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         updateMovies()
     }
