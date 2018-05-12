@@ -41,6 +41,10 @@ class MoviesGridViewController: UIViewController {
         }
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
     // MARK: - Implementation
     
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
