@@ -43,7 +43,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BmV-fE-zRB">
-                            <rect key="frame" x="20" y="0.0" width="355" height="435.5"/>
+                            <rect key="frame" x="20" y="0.0" width="355" height="455.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQ9-GE-glp">
                                     <rect key="frame" x="0.0" y="0.0" width="355" height="344"/>
@@ -167,6 +167,13 @@
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="Kzt-AC-vzm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fze-Y2-KyZ">
+                                    <rect key="frame" x="0.0" y="435.5" width="355" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="UJM-7W-oUX"/>
                                     </constraints>
                                 </view>
                             </subviews>

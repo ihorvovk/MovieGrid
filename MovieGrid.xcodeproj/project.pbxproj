@@ -33,6 +33,7 @@
 		B81C19D820A640020056C8E5 /* MovieThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81C19D720A640020056C8E5 /* MovieThumbnail.swift */; };
 		B830636220A645C50022E120 /* MovieThumbnail.xib in Resources */ = {isa = PBXBuildFile; fileRef = B830636120A645C50022E120 /* MovieThumbnail.xib */; };
 		B830636420A646B50022E120 /* MovieThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B830636320A646B50022E120 /* MovieThumbnailCell.swift */; };
+		B8C1C1E120A796750018A274 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C1C1E020A796750018A274 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		B81C19D720A640020056C8E5 /* MovieThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnail.swift; sourceTree = "<group>"; };
 		B830636120A645C50022E120 /* MovieThumbnail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieThumbnail.xib; sourceTree = "<group>"; };
 		B830636320A646B50022E120 /* MovieThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnailCell.swift; sourceTree = "<group>"; };
+		B8C1C1E020A796750018A274 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				B81C19C920A636270056C8E5 /* Grid */,
 				B81AEDD420A6C9FE003F56F1 /* MovieDetails */,
 				B81C19A020A6277A0056C8E5 /* AppDelegate.swift */,
+				B8C1C1E020A796750018A274 /* LaunchScreen.xib */,
 				B81C19AA20A6277B0056C8E5 /* Assets.xcassets */,
 				B81C19AF20A6277B0056C8E5 /* Info.plist */,
 				B81C19A720A6277A0056C8E5 /* MovieGrid.xcdatamodeld */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C1C1E120A796750018A274 /* LaunchScreen.xib in Resources */,
 				B81C19CD20A6369A0056C8E5 /* MoviesGrid.xib in Resources */,
 				B81C19AB20A6277B0056C8E5 /* Assets.xcassets in Resources */,
 				B830636220A645C50022E120 /* MovieThumbnail.xib in Resources */,
