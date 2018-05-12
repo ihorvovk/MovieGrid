@@ -14,6 +14,7 @@ class MoviesGridViewModel: NSObject {
     
     var movieThumbnails = Variable<[MovieThumbnail]>([])
     var loading = Variable<Bool>(false)
+    var openMovieDetails: Observable<Int> { return openMovieDetailsSubject }
     
     init(managerProvider: ManagerProvider = ManagerProvider.sharedInstance) {
         moviesManager = managerProvider.moviesManager
@@ -41,8 +42,13 @@ class MoviesGridViewModel: NSObject {
         })
     }
     
-    func didScroll(lastVisibleIndexPath: IndexPath) {
-        if !loading.value && !allPagesLoaded, let lastLoadedPage = lastLoadedPage, lastVisibleIndexPath.item > moviesManager.moviesPageSize * lastLoadedPage - 5 {
+    func didSelectMovie(index: Int) {
+        let movieID = movieThumbnails.value[index].movieID
+        openMovieDetailsSubject.onNext(movieID)
+    }
+    
+    func didScroll(lastVisibleIndex: Int) {
+        if !loading.value && !allPagesLoaded, let lastLoadedPage = lastLoadedPage, lastVisibleIndex > moviesManager.moviesPageSize * lastLoadedPage - 5 {
             let page = lastLoadedPage + 1
             loading.value = true
             
@@ -62,6 +68,7 @@ class MoviesGridViewModel: NSObject {
     private let moviesManager: MoviesManager
     private let dataManager: DataManager
     
+    private var openMovieDetailsSubject = PublishSubject<Int>()
     private var fetchResultsController: NSFetchedResultsController<Movie>!
     private var lastLoadedPage: Int? = nil
     private var allPagesLoaded = false

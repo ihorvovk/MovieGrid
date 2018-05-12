@@ -15,14 +15,19 @@ class MoviesGridViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.topItem?.title = NSLocalizedString("Latest Movies", comment: "")
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray]
+        navigationItem.title = NSLocalizedString("Latest Movies", comment: "")
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20), NSAttributedStringKey.foregroundColor: UIColor.lightGray]
+        navigationController?.navigationBar.tintColor = UIColor.lightGray
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("back", comment: ""), style: .plain, target: nil, action: nil)
         
-        view = UINib(nibName: "MoviesGrid", bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
         collectionView.register(UINib(nibName: "MovieThumbnail", bundle: nil), forCellWithReuseIdentifier: "movieThumbnail")
         
         viewModel.movieThumbnails.asObservable().subscribe(onNext: { [weak self] _ in
             self?.collectionView.reloadData()
+        }).disposed(by: disposeBag)
+        
+        viewModel.openMovieDetails.subscribe(onNext: { [weak self] movieID in
+            self?.openMovieDetails(movieID: movieID)
         }).disposed(by: disposeBag)
         
         viewModel.viewDidLoad()
@@ -40,8 +45,14 @@ class MoviesGridViewController: UIViewController {
     
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
     
-    fileprivate let viewModel = MoviesGridViewModel()
+    fileprivate var viewModel = MoviesGridViewModel()
     private let disposeBag = DisposeBag()
+    
+    func openMovieDetails(movieID: Int) {
+        let movieDetailsViewController = MovieDetailsViewController(nibName: "MovieDetails", bundle: nil)
+        movieDetailsViewController.setup(movieID: movieID)
+        navigationController?.pushViewController(movieDetailsViewController, animated: true)
+    }
 }
 
 extension MoviesGridViewController: UICollectionViewDataSource {
@@ -62,9 +73,13 @@ extension MoviesGridViewController: UICollectionViewDataSource {
 
 extension MoviesGridViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectMovie(index: indexPath.item)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let lastVisibleIndexPath = collectionView.indexPathsForVisibleItems.last {
-            viewModel.didScroll(lastVisibleIndexPath: lastVisibleIndexPath)
+            viewModel.didScroll(lastVisibleIndex: lastVisibleIndexPath.item)
         }
     }
 }

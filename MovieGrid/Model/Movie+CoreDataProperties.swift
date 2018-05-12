@@ -17,7 +17,7 @@ extension Movie {
     }
 
     @NSManaged public var posterPath: String
-    @NSManaged public var releaseDate: TimeInterval
+    @NSManaged public var releaseDate: Date
     @NSManaged public var title: String
     @NSManaged public var overview: String
     @NSManaged public var score: Double

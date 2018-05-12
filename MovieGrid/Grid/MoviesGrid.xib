@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesGridViewController" customModule="MovieGrid" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="ZmW-im-cfg" id="DDa-5g-DAs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lE7-Es-Z37"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
