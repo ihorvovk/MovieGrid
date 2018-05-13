@@ -14,6 +14,7 @@ class MovieThumbnailCell: UICollectionViewCell {
     override func prepareForReuse() {
         activityIndicator.stopAnimating()
         posterImageView.af_cancelImageRequest()
+        posterImageView.image = nil
     }
     
     func fill(thumbnail: MovieThumbnail) {
